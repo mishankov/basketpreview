@@ -1,0 +1,44 @@
+{% extends "gamespreview/header-preview.html" %}
+{% block content %}
+<div class="mdl-grid mdl-grid--no-spacing">
+	<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+		<div class="mdl-tabs mdl-js-tabs ">
+			<div class="mdl-tabs__tab-bar">
+				<a href="#tab1" class="mdl-tabs__tab is-active">Standings</a>
+				<a href="#tab2" class="mdl-tabs__tab">Power Rankings</a>
+			</div>
+			<div class="mdl-tabs__panel is-active" id="tab1">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--12-col mdl-cell--middle">
+					{% include 'gamespreview/standings.html' %}
+					</div>
+				</div>
+				
+			</div>
+			<div class="mdl-tabs__panel" id="tab2">
+				<div class="mdl-grid">
+					<div class="mdl-cell--12-col">
+					{% include 'gamespreview/pr.html' %}
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone"> 
+		<div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+			<div class="mdl-grid mdl-grid--no-spacing">
+				<div class="mdl-cell mdl-cell--5-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+					{% include 'gamespreview/game-cards.html' %}
+				</div>
+				<div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+					{% include 'gamespreview/game-stats.html' %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% include 'gamespreview/tooltips.html' %}
+
+{% endblock %}

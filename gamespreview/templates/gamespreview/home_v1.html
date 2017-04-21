@@ -1,0 +1,207 @@
+{% extends "gamespreview/header.html" %}
+{% block content %}
+<div class="mdl-grid">
+	<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+		<div class="mdl-tabs mdl-js-tabs ">
+			<div class="mdl-tabs__tab-bar">
+				<a href="#tab1" class="mdl-tabs__tab">Standings</a>
+				<a href="#tab2" class="mdl-tabs__tab is-active">Power Rankings</a>
+			</div>
+			<div class="mdl-tabs__panel" id="tab1">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--12-col mdl-cell--middle">
+						<h5>Eastern Conference</h5>
+						<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+							<thead class="mdl-data-table mdl-js-data-table">
+								<tr>
+									<th class="mdl-data-table__cell--non-numeric">Team</th>
+									<th>W</th>
+									<th>L</th>
+								</tr>
+							</thead>
+							<tbody>
+							<!--{some jinja shit later}-->
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+			</div>
+			<div class="mdl-tabs__panel is-active" id="tab2">
+				<div class="mdl-grid">
+					<div class="mdl-cell--12-col">
+						<table class="mdl-data-table mdl-js-data-table mdl-shadow--4dp">
+							<thead class="mdl-data-table mdl-js-data-table">
+								<tr>
+									<th>Rank</th>
+									<th class="mdl-data-table__cell--non-numeric">Team</th>
+								</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td class="mdl-color--green-200">1 (4)</td>
+								<td class="mdl-data-table__cell--non-numeric">Golden State Warriors</td>
+							</tr>
+							<tr>
+								<td class="mdl-color--red-200">2 (1)</td>
+								<td class="mdl-data-table__cell--non-numeric">San Antonio Spurss</td>
+							</tr>
+							<tr>
+								<td class="mdl-color--green-200 mdl-color-text--green-900">1 (4)</td>
+								<td class="mdl-data-table__cell--non-numeric">Golden State Warriors</td>
+							</tr>
+							<tr>
+								<td class="mdl-color--red-200 mdl-color-text--red-900">2 (1)</td>
+								<td class="mdl-data-table__cell--non-numeric">San Antonio Spurss</td>
+							</tr>
+							<tr>
+								<td class="mdl-color--green-200 mdl-color-text--green-900">1 (4)</td>
+								<td class="mdl-data-table__cell--non-numeric">Golden State Warriors</td>
+							</tr>
+							<tr>
+								<td class="mdl-color--red-200 mdl-color-text--red-900">2 (1)</td>
+								<td class="mdl-data-table__cell--non-numeric">San Antonio Spurss</td>
+							</tr>
+							<tr>
+								<td class="mdl-color--green-200 mdl-color-text--green-900">1 (4)</td>
+								<td class="mdl-data-table__cell--non-numeric">Golden State Warriors</td>
+							</tr>
+							<tr>
+								<td class="mdl-color--red-200 mdl-color-text--red-900">2 (1)</td>
+								<td class="mdl-data-table__cell--non-numeric">San Antonio Spurss</td>
+							</tr>
+							<tr>
+								<td class="mdl-color--green-200 mdl-color-text--green-900">1 (4)</td>
+								<td class="mdl-data-table__cell--non-numeric">Golden State Warriors</td>
+							</tr>
+							<tr>
+								<td class="mdl-color--red-200 mdl-color-text--red-900">2 (1)</td>
+								<td class="mdl-data-table__cell--non-numeric">San Antonio Spurss</td>
+							</tr>
+							<!--{some jinja shit later}-->
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone"> 
+		<div class="mdl-card mdl-shadow--4dp">
+			<div class="mdl-card__title mdl-card--border">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--5-col">
+						<img src="/static/logos/lal_alt.png" width="100px" alt="Lakers">
+					</div>
+
+					<div class="mdl-cell mdl-cell--2-col">
+						<h3>@</h3>
+					</div>
+
+					<div class="mdl-cell mdl-cell--5-col">
+						<img src="/static/logos/dal_alt.png" width="100px">
+					</div>
+				</div>
+					
+			</div>
+			<div class="mdl-card__supporting-text">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--5-col">
+						<h7>Los-Angeles Lakers</h7>
+					</div>
+
+					<div class="mdl-cell mdl-cell--2-col">
+				
+					</div>
+
+					<div class="mdl-cell mdl-cell--5-col">
+						<h7>Dallas Mavericks</h7>
+					</div>
+				</div>	
+			</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  				<div class="mdl-tabs__tab-bar">
+					<a href="#stats1" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-tabs__tab">
+					See stats
+					</a>
+				</div>
+				</div>
+			</div>
+			<div class="mdl-card__menu">
+				<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+					<i class="material-icons">share</i>
+				</button>
+			</div>
+		</div>
+
+		<p></p>
+
+		<div class="dl-card mdl-shadow--4dp">
+			<div class="mdl-card__title mdl-card--border">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--5-col">
+						<img src="/static/logos/atl_prim.png" width="100px">
+					</div>
+
+					<div class="mdl-cell mdl-cell--2-col">
+						<h3>@</h3>
+					</div>
+
+					<div class="mdl-cell mdl-cell--5-col">
+						<img src="/static/logos/bos_prim.png" width="100px">
+					</div>
+				</div>	
+			</div>
+			<div class="mdl-card__supporting-text">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--5-col">
+						Atlanta Hawks
+					</div>
+
+					<div class="mdl-cell mdl-cell--2-col">
+				
+					</div>
+
+					<div class="mdl-cell mdl-cell--5-col">
+						Boston Celtics
+					</div>
+				</div>	
+			</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  				<div class="mdl-tabs__tab-bar">
+					<a href="#stats2" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-tabs__tab">
+					See stats
+					</a>
+				</div>
+				</div>
+			</div>
+			<div class="mdl-card__menu">
+				<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+					<i class="material-icons">share</i>
+				</button>
+			</div>
+		</div>	
+
+	</div>
+	<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+	 	<div class="mdl-tabs mdl-js-tabs">
+		 	<div class="mdl-tabs__panel is-active" id="stats1">
+				<p>First Stats</p>
+			</div>
+			<div class="mdl-tabs__panel" id="stats2">
+				<p>Second Stats</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="mdl-grid">
+	<div class="mdl-cell mdl-cell--12-col"> {% include 'gamespreview/includes/htmlsnippet.html' %} </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+  {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="description" content="{{ post.short_body }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>{{ post.title }} | BasketPreview.xyz</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{% static 'mdl/material.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mdl/extensions.css' %}"> 
+  </head>
+ <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-layout--no-desktop-drawer-button mdl-color--grey-100">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">
+            <a href="/"><img src="{% static 'images/main-logos/dark.png' %}" width="150px"></a>
+          </span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+              <a class="mdl-navigation__link" href="/">Home</a>
+              <a class="mdl-navigation__link" href="/blog/">Blog</a>
+              <a class="mdl-navigation__link" href="/about/">About</a>
+            </nav>
+        </div>
+      </header>
+
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"> 
+          <a href="/"><img src="{% static 'images/main-logos/mini_dark.png' %}" width="50px" style="padding-top: 5px"> </a>
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="/blog/">Blog</a>
+            <a class="mdl-navigation__link" href="/about/">About</a>
+        </nav>
+      </div>
+
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+              {{ post.date }}
+            </div>
+
+              <h3> {{ post.title }} </h3>
+
+              <p>
+                {{ post.body|safe}}
+              </p>
+              <p>
+                У каждого человека есть свой болевой порог. У кого-то он мал – порезал руку и потеря сознания. У кого-то повыше – из таких людей жилы тяни, молчать будет. Из принципа или из вредности, что зачастую одно и то же. Но когда человека засасывает и обрабатывает аномалия, ломая все тело, каждую клеточку организма выворачивая наизнанку, человек закричит. Закричит как никогда не кричал. Так случилось и с сталкером Локо, который полез в поле аномалий за ценным артефактом. История умалчивает, какой это был артефакт, но он был несомненно дорогим. Локо всего лишь краем локтя задел аномалию и она сработала……
+
+Боль…Адская, нестерпимая боль…. 
+
+Я лежал на твердой, холодной земле и переживал самое трудное испытание в моей жизни. Пока что жизни, но скоро она перерастет в смерть. Как можно защитить себя, если в теле не осталось ни одной целой кости? Скоро ночь и появятся всякие твари, которые днем боятся выползти из своих нор. Да какая ночь, о чем я? Днем полно мутантов, которые не против отведать свежего мясца. Взять тех же слепых псов или псевдоплоть. Пусть первые не самые умные и сообразительные твари, а мутировавшая одноглазая свинка с клешнями больно труслива, но неподвижного сталкера они схомячат запросто….
+
+Что видится человеку перед смертью? Многие считали, что перед логическим концом перед глазами проносится вся жизнь. Со мной такого не случилось. Я лежал и думал, думал об упущенных возможностях, о своей никчемной жизни, которая закончится так глупо. Не от старости помру или в бою, а в зловонных пастях исчадий ада, имя которому Зона. Что меня привело сюда? Возможно, желание открыть тайны, проверить себя или же забыть то, что я не хочу вспоминать. Я не могу ответить на этот вопрос, но пришел сюда по глупости и умру так же глупо…..
+
+Вот кого я не ожидал увидеть на своих похоронах! Химера и контролер, кто бы мог подумать! Два самых опасных зоновских мутанта и по мою душу! Прямо таки счастливый день какой то! Думаю вам интересно узнать, что они из себя представляют.
+Начну с химеры. Это очень большая тварь, больше похожая на льва или тигра, но при этом размером с УАЗик и совершенно лысая. Каждая лапа размером с мою немаленькую ногу, когти и клыки по десять сантиметров в длину. Двигается плавно и грациозно. Кажется, что она не двигается, а плавно перетекает из одной позы в другую. Химеры так же имеют дублирующие органы, это значит, что у нее по два сердца, мозга и т.д. 
+Далее на раздаче у нас контролер. Это лысый гуманоид ростом под два метра, с квадратной башкой и черными глазами без белков, вместо пяти пальцев имеет по четыре пальца на руках и по три на лапах. Одет в подранную майку алкашку и старые потрепанные джинсы. Думаете что в нем опасного? Контролер он и есть контролер. Он может контролировать людей и мутантов, управлять их поведением, уничтожать мозг, нервную систему, а так же читать мысли. Жуть в общем.
+И вот эти два гаврика идут к моему бренному телу, а я улыбаюсь до ушей. Желанная Смерть пришла… 
+
+Когда расстояние между мной и этими мутантами сократилось до метра, контролер остановился, а химера начала обходить меня(или уже мой труп?) сбоку. Внезапно контролер улыбнулся, в моей голове возник хриплый, тяжелый голос, который проговорил : « Мы поможем тебе», затем мое сознание отключилось и я погрузился в пустоту…..
+              </p>
+
+              <p>
+                <script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="medium,round,line,horizontal,counter,theme=04" data-services="facebook,twitter,vkontakte,google,blogger,linkedin,print,email"></div>
+              </p>
+              
+          </div>
+        </div>
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul  class="mdl-mini-footer__link-list">
+              <li> <a class="mdl-navigation__link" href="/">Home</a> </li>
+              <li> <a class="mdl-navigation__link" href="/blog/">Blog</a> </li>
+              <li> <a class="mdl-navigation__link" href="/about/">About</a> </li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="{% static 'mdl/material.min.js' %}"></script>
+  </body>
+</html>
